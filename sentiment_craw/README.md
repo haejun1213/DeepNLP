@@ -104,7 +104,7 @@
 
 ---
 
-### 2. Streamlit 웹 애플리케이션 (`main_app.py`, `pages/Analyze_Reviews.py`)
+### 2. Streamlit 웹 애플리케이션 (`main_app.py`, `pages/Analyze_Reviews.py`,  `Visualize_CSV.py`)
 
 #### 도서 검색 (`main_app.py`)
 - 키워드 기반 검색 페이지 URL 생성
@@ -116,6 +116,9 @@
 - 크롤링한 리뷰 → `predict_sentiment_tf()` → 감성 예측
 - 결과를 Pandas로 정리, 시각화 결과 표시
 
+#### CSV 기반 데이터 시각화
+- 저장해둔 csv로 시각화 가능
+- 
 ---
 
 ## 설치 및 실행 방법
