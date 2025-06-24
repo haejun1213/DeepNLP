@@ -30,7 +30,7 @@
 ---
 
 ## 프로젝트 구조
-
+```
 .
 ├── fonts/
 │ └── NanumGothic.ttf
@@ -47,7 +47,7 @@
 ├── train_model.py
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## 동작 원리
