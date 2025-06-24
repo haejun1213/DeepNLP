@@ -42,9 +42,9 @@
 │ └── vocab.txt
 ├── pages/
 │ └── Analyze_Reviews.py
-├── labeled_reviews_10k.csv
+├── labeled_reviews_40k.csv
 ├── main_app.py
-├── train_model.py
+├── train_model.ipynb
 ├── requirements.txt
 └── README.md
 ```
@@ -52,10 +52,10 @@
 
 ## 동작 원리
 
-### 1. 감성 분석 모델 학습 (`train_model.py`)
+### 1. 감성 분석 모델 학습 (`train_model.ipynb`)
 
 #### 데이터 준비
-- `labeled_reviews_10k.csv`: 10,000개의 한국어 리뷰 (긍정/중립/부정 → 2/1/0)
+- `labeled_reviews_40k.csv`: 40,000개의 한국어 리뷰 (긍정/중립/부정 → 2/1/0)
 - `train_test_split`: 학습 80% / 검증 20%
 
 #### 모델 아키텍처
@@ -70,6 +70,9 @@
 - 옵티마이저: `Adam(lr=2e-5)`
 - 손실함수: `SparseCategoricalCrossentropy`
 - 배치: 16 / 에폭: 5
+
+![image](https://github.com/user-attachments/assets/3079aeb4-16b2-4aad-94a6-b5fd923a0e98)
+
 
 #### 평가 및 저장
 - `classification_report`로 정확도/정밀도/재현율 확인
