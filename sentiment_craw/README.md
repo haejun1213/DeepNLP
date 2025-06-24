@@ -81,7 +81,7 @@
 #### 데이터 준비
 - `labeled_reviews_30k.csv`: 30,000개의 한국어 리뷰 (긍정/중립/부정 → 2/1/0) , 알라딘 도서에서 크롤링 해온 데이터
 - `train_test_split`: 학습 80% / 검증 20%
-
+- LLM(gemma) 사용하여 라벨링
 #### 모델 아키텍처
 - `klue/bert-base` 기반 `TFBertModel` 사용
 - Dropout + Dense로 구성된 커스텀 분류기 구축
