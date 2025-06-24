@@ -79,7 +79,7 @@
 ### 1. 감성 분석 모델 학습 (`train_model.ipynb`)
 
 #### 데이터 준비
-- `labeled_reviews_30k.csv`: 30,000개의 한국어 리뷰 (긍정/중립/부정 → 2/1/0)
+- `labeled_reviews_30k.csv`: 30,000개의 한국어 리뷰 (긍정/중립/부정 → 2/1/0) , 알라딘 도서에서 크롤링 해온 데이터
 - `train_test_split`: 학습 80% / 검증 20%
 
 #### 모델 아키텍처
@@ -104,7 +104,7 @@
 
 ---
 
-### 2. Streamlit 웹 애플리케이션 (`main_app.py`, `pages/Analyze_Reviews.py`,  `Visualize_CSV.py`)
+### 2. Streamlit 웹 애플리케이션 (`main_app.py`, `pages/Analyze_Reviews.py`,  `pages/Visualize_CSV.py`)
 
 #### 도서 검색 (`main_app.py`)
 - 키워드 기반 검색 페이지 URL 생성
@@ -116,7 +116,7 @@
 - 크롤링한 리뷰 → `predict_sentiment_tf()` → 감성 예측
 - 결과를 Pandas로 정리, 시각화 결과 표시
 
-#### CSV 기반 데이터 시각화
+#### CSV 기반 데이터 시각화 (`pages/Visualize_CSV.py`)
 - 저장해둔 csv로 시각화 가능
 
 #### 웹 크롤링 및 HTML 분석 상세
@@ -221,5 +221,3 @@ wordcloud
 ## 비동기 크롤링: asyncio, aiohttp 활용하여 속도 향상
 
 ## 모델 경량화: DistilBERT, MobileBERT 등 적용
-
-## 고급 시각화: 감성 변화 추이, 감성별 키워드 분석 등
