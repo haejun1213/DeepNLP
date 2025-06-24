@@ -79,7 +79,7 @@
 ### 1. 감성 분석 모델 학습 (`train_model.ipynb`)
 
 #### 데이터 준비
-- `labeled_reviews_40k.csv`: 40,000개의 한국어 리뷰 (긍정/중립/부정 → 2/1/0)
+- `labeled_reviews_30k.csv`: 30,000개의 한국어 리뷰 (긍정/중립/부정 → 2/1/0)
 - `train_test_split`: 학습 80% / 검증 20%
 
 #### 모델 아키텍처
