@@ -10,22 +10,46 @@
 - 사용자가 입력한 키워드를 기반으로 Selenium을 사용하여 교보문고의 동적 검색 결과 페이지에 접속
 - BeautifulSoup으로 HTML 구조를 파싱하여 제목, 저자, 출판사 및 상세 URL을 추출
 
+![image](https://github.com/user-attachments/assets/f79669dd-7160-4ae7-9cd8-96c571e67e42)
+
+
 ### 리뷰 실시간 크롤링
 - WebDriverWait과 `staleness_of` 조건을 활용해 동적 페이지네이션 처리
 - ‘다음’ 버튼을 끝까지 클릭하여 모든 리뷰(텍스트, 평점, 작성자, 작성일)를 수집
+
+![image](https://github.com/user-attachments/assets/13d97c18-8195-4faa-aa9e-a6426f2b29e7)
+
 
 ### AI 기반 감성 분석
 - Hugging Face의 `klue/bert-base` 모델을 1만 개의 한국어 리뷰로 Fine-tuning한 커스텀 모델 사용
 - 각 리뷰를 긍정/중립/부정으로 분류하고, 클래스 확률 계산
 
+![image](https://github.com/user-attachments/assets/b19d0896-63b0-4633-88ae-8af8587d5aac)
+
+![image](https://github.com/user-attachments/assets/7a16a6ee-7d3b-43f1-bd03-d356945e0eb0)
+![image](https://github.com/user-attachments/assets/56d5bf95-ad6e-4afc-9f21-b2fa0020e23d)
+![image](https://github.com/user-attachments/assets/86ea63c9-c90c-4e89-bcb2-990c964a756e)
+
+
 ### 데이터 시각화
 - **감성 분포**: Seaborn 막대그래프
+  ![image](https://github.com/user-attachments/assets/43aab7cd-01d0-4f5a-b20f-95dc25c5d296)
+
 - **워드클라우드**: WordCloud 라이브러리 활용
+  ![image](https://github.com/user-attachments/assets/eb33538e-adf4-4ce6-bb48-f78b04094c1d)
+
 - **평점 분포**: Seaborn 히스토그램
+  ![image](https://github.com/user-attachments/assets/a1346e6b-f36f-43e1-a901-8cc286b46c75)
+
 
 ### 결과 다운로드
 - Pandas DataFrame으로 분석 결과 정리
 - CSV 파일로 사용자에게 제공 (리뷰 내용, 평점, 예측 감성 등 포함)
+
+
+### CSV 파일 기반 시각화
+- csv 파일 저장해 두면 데이터 시각화 가능
+  ![image](https://github.com/user-attachments/assets/0e1313d6-b056-457d-838c-3a0a64ca5eff)
 
 ---
 
