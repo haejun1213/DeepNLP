@@ -168,13 +168,11 @@ wordcloud
 
 전체 목록은 requirements.txt 참조
 
-향후 개선 사항
-비동기 크롤링: asyncio, aiohttp 활용하여 속도 향상
+---
 
-모델 경량화: DistilBERT, MobileBERT 등 적용
+# 향후 개선 사항
+## 비동기 크롤링: asyncio, aiohttp 활용하여 속도 향상
 
-클라우드 배포: Streamlit Cloud / AWS / GCP 지원
+## 모델 경량화: DistilBERT, MobileBERT 등 적용
 
-DB 연동: 분석 결과를 DB에 저장, 이력 관리 기능 추가
-
-고급 시각화: 감성 변화 추이, 감성별 키워드 분석 등
+## 고급 시각화: 감성 변화 추이, 감성별 키워드 분석 등
